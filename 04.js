@@ -13,6 +13,19 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
+  var numero = num;
+   var nuevoNumero = 0;
+
+   while (numero > 0) {
+      nuevoNumero = numero%10 + nuevoNumero*10;
+      numero = Math.floor(numero/10);
+   }
+   
+   if (nuevoNumero == num) {
+      return (true);
+   } else {
+      return (false);
+   }
 
 }
 
